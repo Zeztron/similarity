@@ -9,6 +9,7 @@ import Paragraph from './ui/Paragraph';
 import CopyButton from './ui/CopyButton';
 import { Input } from './ui/Input';
 import Button from './ui/Button';
+
 const RequestApiKey = () => {
   const [isCreating, setIsCreating] = useState<boolean>(false);
   const [apiKey, setApiKey] = useState<string | null>(null);
