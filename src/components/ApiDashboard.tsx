@@ -8,6 +8,7 @@ import LargeHeading from './ui/LargeHeading';
 import Paragraph from './ui/Paragraph';
 import { Input } from './ui/Input';
 import Table from './Table';
+import ApiKeyOptions from './ApiKeyOptions';
 
 const ApiDashboard = async () => {
   const user = await getServerSession(authOptions);
@@ -41,7 +42,7 @@ const ApiDashboard = async () => {
       <Paragraph className='text-center md:text-left mt-4 -mb-4'>
         Your API History:
       </Paragraph>
-
+      <ApiKeyOptions apiKeyId={activeApiKey.id} apiKey={activeApiKey.key} />
       <Table userRequest={serializableUserRequests} />
     </div>
   );
