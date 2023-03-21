@@ -6,7 +6,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-} from '@/ui/DropdownMenu';
+} from './ui/DropdownMenu';
 import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 import Button from './ui/Button';
 import { Laptop, Moon, Sun } from 'lucide-react';
