@@ -16,6 +16,7 @@ const CopyButton: React.FC<CopyButtonProps> = ({
     <Button
       className={className}
       {...props}
+      type="button"
       onClick={() => {
         navigator.clipboard.writeText(valueToCopy);
 

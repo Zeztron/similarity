@@ -30,7 +30,6 @@ const RequestApiKey = () => {
 
       return;
     } finally {
-      setApiKey(apiKey);
       setIsCreating(false);
     }
   };
